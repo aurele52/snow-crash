@@ -1,0 +1,18 @@
+ls -Rl / 2>/dev/null | grep flag00
+----r--r-- 1 flag00  flag00      15 Mar  5  2016 john
+----r--r--  1 flag00  flag00      15 Mar  5  2016 john
+
+find / -name john 2>/dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
+
+cat /usr/sbin/john 
+cdiiddwpgswtgt
+
+cdiiddwpgswtgt = nottoohardhere in ceasar + 15
+
+su flag00
+Password: nottoohardhere
+
+getflag
+Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
