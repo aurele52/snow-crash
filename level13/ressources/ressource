@@ -1,0 +1,12 @@
+ltrace ./level13
+gdh ./level13
+b main
+b getuuid
+run
+n
+finish
+info register
+set $eax=4242
+n
+n
+

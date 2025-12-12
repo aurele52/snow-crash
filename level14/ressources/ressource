@@ -1,0 +1,10 @@
+flag14:x:3014:3014::/home/flag/flag14:/bin/bash
+gdb getflag
+b ptrace
+run
+finish
+set $eax=0
+b getuid
+n
+finish
+set $eax=3014
