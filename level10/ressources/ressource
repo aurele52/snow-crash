@@ -1,0 +1,7 @@
+level10@SnowCrash:~$ ./level10 "file" localhost
+level10@SnowCrash:~$ objdump -d ./level10 > b
+level10@SnowCrash:~$ cat b
+
+./level10:     file format elf32-i386
+
+woupa2yuojeeaaed06riuj63c

